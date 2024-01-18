@@ -22,6 +22,7 @@ a {
 a:hover {
   color: #fc8129;
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1,
@@ -356,7 +357,9 @@ h6 {
   flex-direction: column;
   text-align: center;
   position: relative;
+  /*
   height: 70vh;
+  */
   padding-top: 60px;
 }
 
@@ -1185,8 +1188,13 @@ section {
 
 .faq .faq-list li {
   border-bottom: 1px solid #ececf1;
+  /*
   margin-bottom: 20px;
   padding-bottom: 20px;
+  */
+}
+.faq .faq-list li li {
+  padding: 0 0 0 15px;
 }
 
 .faq .faq-list .question {
@@ -1196,6 +1204,7 @@ section {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 10px;
   padding-left: 25px;
   cursor: pointer;
   color: #bd5102;
@@ -1211,7 +1220,7 @@ section {
 
 .faq .faq-list p {
   margin-bottom: 0;
-  padding: 10px 0 0 25px;
+  padding: 0 0 0 25px;
 }
 
 .faq .faq-list .icon-show {
@@ -1574,4 +1583,64 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+/* Added 20240118 */
+
+.skills .span5 {
+  text-align: left;
+  padding: 47px 0;
+}
+
+.expand-bg {
+  background: none repeat scroll 0 0 #EAEDF2;
+  border-radius: 16px;
+  height: 16px;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 0 2px;
+}
+
+.technicalandsoftskills {
+  background: #5B5B66;
+}
+
+.expert {
+  width: 95%;
+}
+
+.proficient {
+  width: 85%;
+}
+
+.competent {
+  width: 75%;
+}
+
+.practical {
+  width: 50%;
+}
+
+.expand {
+  border-radius: 10px;
+  height: 4px;
+  margin: 4px 0 4px 3px;
+  padding: 4px 0 4px 5px;
+  position: absolute;
+}
+
+.span5 p span {
+  float: right;
+}
+
+h3.skill {
+  padding-top: 50px;
+}
+
+.logo span {
+  font-size: 6px;
+}
+
+h3.employer {
+  padding-top: 60px;
 }
