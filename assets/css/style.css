@@ -10,7 +10,9 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif;
+  /* tested on 20240121-1536 
+  font-size: 10px; */
   color: #444444;
 }
 
@@ -31,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -392,7 +394,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -507,7 +509,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif; /* previously Poppins */
 }
 
 .section-title h2::after {
@@ -525,7 +527,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif; /* previously Poppins */
   color: #2a2c39;
 }
 
@@ -569,7 +571,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -694,7 +696,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -1087,7 +1089,7 @@ section {
   font-size: 36px;
   color: #ef6603;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif; /* previously Poppins */
   margin-bottom: 20px;
 }
 
@@ -1143,7 +1145,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1540,7 +1542,7 @@ section {
   font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cambria W02 Regular", "Raleway", sans-serif; /* previously Poppins */
   padding: 0;
   margin: 0 0 15px 0;
 }
@@ -1643,4 +1645,26 @@ h3.skill {
 
 h3.employer {
   padding-top: 60px;
+}
+
+/* Added on 20240121-1506 to enable Cambria fonts to load */
+
+@import url(https://db.onlinewebfonts.com/c/758d40d7ca52e3a9bff2655c7ab5703c?family=Cambria+W02+Regular); 
+
+@font-face {
+  font-family: "Cambria W02 Regular";
+  src: url("https://db.onlinewebfonts.com/t/758d40d7ca52e3a9bff2655c7ab5703c.eot");
+  src: url("https://db.onlinewebfonts.com/t/758d40d7ca52e3a9bff2655c7ab5703c.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/758d40d7ca52e3a9bff2655c7ab5703c.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/758d40d7ca52e3a9bff2655c7ab5703c.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/758d40d7ca52e3a9bff2655c7ab5703c.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/758d40d7ca52e3a9bff2655c7ab5703c.svg#Cambria W02 Regular")format("svg");
+}
+
+/* Added on 20240121-1608 to use smaller fonts for mobile */
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
 }
